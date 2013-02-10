@@ -38,7 +38,7 @@ Edit the data/config.js file to match your details.
 * s/foo/bar/user - Last line written by "user" will replace "foo" with "bar"
 
 ### Private messaging the bot
-!* remember | !save | !note - Output all records.
+* !remember | !save | !note - Output all records.
 
 Packages
 ---------
