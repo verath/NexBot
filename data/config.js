@@ -6,7 +6,7 @@
 	"groove":"api key",
 
 	"lastfm_key":"api_key",
-	"lastfm_key":"secret",
+	"lastfm_secret":"secret",
 
 	"bitly_user":"username",
 	"bitly_key":"api_key",
