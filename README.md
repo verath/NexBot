@@ -48,5 +48,5 @@ Packages
 
 Install them via npm using:
 ```bash
-npm install irc lastfm bitly
+npm install irc lastfm bitly 
 ```
