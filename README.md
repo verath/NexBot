@@ -16,7 +16,7 @@ make install
 
 2. Install the required packages for NexBot
 ```bash
-npm install irc lastfm bitly
+npm install mysql irc lastfm bitly
 ```
 
 3. Setup the database.
@@ -28,6 +28,10 @@ mysql -u <user> -p <database> < db.sql
 
 
 ## Usage
+
+Start the bot by running `node main.js`. 
+Once the bot is running you can use the following commands:
+
 * !last.fm - Output the last listened track from last.fm
 * !last.fm foobar - Will get the last track listened to by the user "foobar"
 * !groove - Output the last listened track from last.fm in the form of a grooveshark URL.
@@ -48,5 +52,5 @@ Packages
 
 Install them via npm using:
 ```bash
-npm install irc lastfm bitly 
+npm install mysql irc lastfm bitly 
 ```
