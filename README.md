@@ -28,17 +28,17 @@ Edit the data/config.js file to match your details.
 
 
 ## Usage
-!last.fm - Output the last listened track from last.fm
-!last.fm foobar - Will get the last track listened to by the user "foobar"
-!last.fm set user foo - Will map the IRC nick to the Last.fm user "foo"
-!groove - Output the last listened track from last.fm in the form of a grooveshark URL.
-!groove foo - Will get the first result from Grooveshark which matches "foo"
-!remember foo | !save foo | !note foo - Will add "foo" to the database
-s/foo/bar - Last line you wrote will replace "foo" with "bar"
-s/foo/bar/user - Last line written by "user" will replace "foo" with "bar"
+* !last.fm - Output the last listened track from last.fm
+* !last.fm foobar - Will get the last track listened to by the user "foobar"
+* !last.fm set user foo - Will map the IRC nick to the Last.fm user "foo"
+* !groove - Output the last listened track from last.fm in the form of a grooveshark URL.
+* !groove foo - Will get the first result from Grooveshark which matches "foo"
+* !remember foo | !save foo | !note foo - Will add "foo" to the database
+* s/foo/bar - Last line you wrote will replace "foo" with "bar"
+* s/foo/bar/user - Last line written by "user" will replace "foo" with "bar"
 
 ### Private messaging the bot
-!remember | !save | !note - Output all records.
+!* remember | !save | !note - Output all records.
 
 Packages
 ---------
