@@ -11,6 +11,8 @@ nicks.load('data/nicks.js');
 var fs = require('fs');
 var stream = fs.createWriteStream("main.log");
 
+var https = require('https');
+
 /* SETUP LAST.FM */
 var LastFmNode = require('lastfm').LastFmNode;
 var lastfm = new LastFmNode({
@@ -105,6 +107,20 @@ irc.connect = function(channels) {
 					} else {
 						irc.client.say(chan, "Message saved");
 					}
+				});
+			} else if (matches[1] == "issues") {
+				var req = https.request('https://api.github.com/repos/HackThis/NexBot', function(res) {
+				res.on('data', function(d) {
+					// Get the result and turn it into a JSON object.
+					var obj = JSON.parse(d);
+					// Return the string.
+					irc.client.say(chan, obj.open_issues_count);
+					});
+				});
+				req.end();
+
+				req.on('error', function(e) {
+					irc.client.say(chan, "Errm there be an error");
 				});
 			}
 		}
