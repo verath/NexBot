@@ -1,4 +1,4 @@
 module.exports = {
-    MockIrcClient: require('./mockIrcClient'),
-    MockLoader: require('./mockLoader')
+    MockIrcClient: require('./mockIrcClientCS'),
+    MockLoader: require('./mockLoaderCS')
 };
