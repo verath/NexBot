@@ -18,6 +18,9 @@
     _allowSet = true;
 
     function MockLoader(data, allowSet) {
+      if (allowSet == null) {
+        allowSet = true;
+      }
       MockLoader.__super__.constructor.call(this, Loader.prototype);
       if (typeof data === 'object') {
         _data = data;

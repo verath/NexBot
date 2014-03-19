@@ -22,5 +22,3 @@
   module.exports = MockIrcClient;
 
 }).call(this);
-
-//# sourceMappingURL=mockIrcClientCS.map
